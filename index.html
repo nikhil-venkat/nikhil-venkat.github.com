@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="myWebsite">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+    <script src="scripts/respond.js"></script>
+    <script src="scripts/modules/routesModule.js"></script>
+	<script src="scripts/controllers/app.js"></script>
+	<script src="scripts/controllers/mainCtrl.js"></script>
+
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
-  <body>
+  <body ng-controller="mainCtrl">
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/nikhil-venkat">View On GitHub</a></li>
@@ -27,13 +32,18 @@
     <div class="wrapper">
       	<section>
 	        <div id="title">
-	          <h1>nikhil-venkat.github.com</h1>
+	          <h1>{{myName}}</h1>
 	          <p></p>
 	          <hr>
 	          <span class="credits left">Project maintained by <a href="https://github.com/nikhil-venkat">nikhil-venkat</a></span>
 	        </div>
 	        <h3>Welcome to my personal Webspace.</h3>
-	      </section>
+			<ul>
+				<li><a href="#/resume">Resume</a></li>
+				<li><a href="#/projects">Projects</a></li>
+			</ul>
+			<ng-view></ng-view>
+		  </section>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
