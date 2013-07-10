@@ -1,19 +1,14 @@
 <!doctype html>
 <html ng-app="myWebsite">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="stylesheets/app.css" rel="stylesheet" media="screen">
     <title>nikhil-venkat</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
-    <script src="scripts/respond.js"></script>
-    <script src="scripts/modules/routesModule.js"></script>
-	<script src="scripts/controllers/app.js"></script>
-	<script src="scripts/controllers/mainCtrl.js"></script>
-	<script src="scripts/controllers/resumeCtrl.js"></script>
-	<script src="scripts/controllers/projectsCtrl.js"></script>
+    <!--link rel="stylesheet" href="stylesheets/styles.css" media="screen"-->
+    <!--link rel="stylesheet" href="stylesheets/pygment_trac.css" media="screen"-->
+    
 
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,30 +19,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
+</html>
+
   <body ng-controller="mainCtrl">
-      <div id="header">
+
+      <!--div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/nikhil-venkat">View On GitHub</a></li>
         </nav>
-      </div><!-- end header -->
+      </div>
+      <!-- end header -->
 
-    <div class="wrapper">
-      	<section>
-	        <div id="title">
-	          <h1>{{myName}}</h1>
-	          <p></p>
-	          <hr>
-	          <span class="credits left">Project maintained by <a href="https://github.com/nikhil-venkat">nikhil-venkat</a></span>
-	        </div>
-	        <h3>Welcome to my personal Webspace.</h3>
-			<ul>
-				<li><a href="#/resume">Resume</a></li>
-				<li><a href="#/projects">Projects</a></li>
-			</ul>
-			<ng-view></ng-view>
-		  </section>
+      
+      <div class="container">
+        <div class="masthead">
+          
+          <h3 class="muted">{{myName}}</h3>
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+                <ul class="nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#/resume">Resume</a></li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#/projects">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Feedback</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.navbar -->
+        </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>I build stuff!</h1>
+        <p class="lead">Hello! My name is Nikhil, welcome to my personal webspace. I am a front end engineer living in San Francisco with my beautiful wife.</p>
+        <a class="btn btn-large btn-success" href="#">Resume</a>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid">
+        <ng-view></ng-view>
+        <div class="span12">
+          <h2>Heading</h2>
+          <p>Some Content goes here. Some Content goes here Some Content goes here Some Content goes here Some Content goes here Some Content goes here Some Content goes here</p>
+          <p><a class="btn" href="#">View details</a></p>
+        </div>
+        <!--div class="span4">
+          <h2>Heading</h2>
+          <p>Some Content goes here. Some Content goes here. Some Content goes here. Some Content goes here.Some Content goes here. Some Content goes here. Some Content goes here</p>
+          <p><a class="btn" href="#">View details</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Some Content goes here. Some Content goes here .Some Content goes here .Some Content goes hereSome Content goes here.</p>
+          <p><a class="btn" href="#">View details</a></p>
+        </div-->
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>Nikhil-Venkat &copy; 2013</p>
+      </div>
+
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+    <!--script src="scripts/respond.js"></script-->
+    <script src="scripts/modules/routesModule.js"></script>
+    <script src="scripts/controllers/app.js"></script>
+    <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/resumeCtrl.js"></script>
+    <script src="scripts/controllers/projectsCtrl.js"></script>
   </body>
 </html>
