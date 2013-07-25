@@ -1,3 +1,6 @@
 .row-fluid [class*="span"]{
 	margin:0px;
 }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none;
+}

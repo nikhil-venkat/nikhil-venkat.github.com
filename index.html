@@ -34,18 +34,18 @@
       <div class="container">
         <div class="masthead">
           
-          <h3 class="muted">{{myName}}</h3>
+          <h3 class="muted" ng-cloak>{{myName}}</h3>
           <div class="navbar">
             <div class="navbar-inner">
               <div class="container">
                 <ul class="nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
+                  <li class="active"><a href="#index">Home</a></li>
+                  <li><a href="#about">About</a></li>
                   <li><a href="#/resume">Resume</a></li>
-                  <li><a href="#">Work</a></li>
+                  <li><a href="#work">Work</a></li>
                   <li><a href="#/projects">Projects</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#feedback">Feedback</a></li>
                 </ul>
               </div>
             </div>
@@ -95,7 +95,11 @@
     <script src="scripts/modules/routesModule.js"></script>
     <script src="scripts/controllers/app.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/aboutCtrl.js"></script>
     <script src="scripts/controllers/resumeCtrl.js"></script>
+    <script src="scripts/controllers/workCtrl.js"></script>
     <script src="scripts/controllers/projectsCtrl.js"></script>
+    <script src="scripts/controllers/contactCtrl.js"></script>
+    <script src="scripts/controllers/feedbackCtrl.js"></script>
   </body>
 </html>
