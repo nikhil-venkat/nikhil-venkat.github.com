@@ -1,4 +1,5 @@
-function aboutCtrl($scope){
+function aboutCtrl($scope,$rootScope){
 	
+	$rootScope.activeTab = 'about';
 }
-aboutCtrl.inject = ['$scope'];
+aboutCtrl.inject = ['$scope','$rootScope'];

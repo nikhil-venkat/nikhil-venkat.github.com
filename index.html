@@ -37,13 +37,13 @@
             <div class="navbar-inner">
               <div class="container">
                 <ul class="nav">
-                  <li class="active"><a href="#index">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#/resume">Resume</a></li>
-                  <li><a href="#work">Work</a></li>
-                  <li><a href="#/projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                  <li><a href="#feedback">Feedback</a></li>
+                  <li ng-animate="{activeTab=='index'}" ng-class="{active:activeTab=='index'}"><a href="#index">Home</a></li>
+                  <li ng-class="{active:activeTab=='about'}"><a href="#/about">About</a></li>
+                  <li ng-class="{active:activeTab=='resume'}"><a href="#/resume">Resume</a></li>
+                  <li ng-class="{active:activeTab=='work'}"><a href="#/work">Work</a></li>
+                  <li ng-class="{active:activeTab=='projects'}"><a href="#/projects">Projects</a></li>
+                  <li ng-class="{active:activeTab=='contact'}"><a href="#/contact">Contact</a></li>
+                  <li ng-class="{active:activeTab=='feedback'}"><a href="#/feedback">Feedback</a></li>
                 </ul>
               </div>
             </div>
@@ -87,8 +87,8 @@
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>  
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> 
     <!--script src="scripts/respond.js"></script-->
     <script src="scripts/modules/routesModule.js"></script>
     <script src="scripts/controllers/app.js"></script>

@@ -6,7 +6,8 @@ config(['$routeProvider', function($routeProvider) {
       when('/work', {templateUrl: 'pages/work.html'}).
       when('/projects', {templateUrl: 'pages/projects.html'}).
       when('/contact', {templateUrl: 'pages/contact.html'}).
+      when('/feedback', {templateUrl: 'pages/feedback.html'}).
       otherwise({redirectTo: '/index'});
 }]).run(['$rootScope', '$timeout', '$routeParams', function($rootScope, $timeout, $routeParams){
-	
+	$rootScope.activeTab = 'index';
 }]);

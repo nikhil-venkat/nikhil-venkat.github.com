@@ -1,4 +1,4 @@
-function workCtrl($scope){
-	
+function workCtrl($scope,$rootScope){
+	$rootScope.activeTab = 'work'
 }
-workCtrl.inject = ['$scope'];
+workCtrl.inject = ['$scope','$rootScope'];

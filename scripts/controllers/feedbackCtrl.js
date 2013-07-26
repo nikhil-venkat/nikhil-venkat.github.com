@@ -1,4 +1,4 @@
-function feedbackCtrl($scope){
-	
+function feedbackCtrl($scope,$rootScope){
+	$rootScope.activeTab = 'feedback';
 }
-feedbackCtrl.inject = ['$scope'];
+feedbackCtrl.inject = ['$scope','$rootScope'];

@@ -1,4 +1,4 @@
-function resumeCtrl($scope){
-	
+function resumeCtrl($scope,$rootScope){
+	$rootScope.activeTab = 'resume';
 }
-resumeCtrl.inject = ['$scope'];
+resumeCtrl.inject = ['$scope','$rootScope'];
