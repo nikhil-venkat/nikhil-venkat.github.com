@@ -14,9 +14,11 @@ config(['$routeProvider', function($routeProvider) {
 	$rootScope.flags = {};
 	$rootScope.flags.loading = false;
 
+
+	
 	$rootScope.setActiveTab = function(tab){
 		$rootScope.clickedTab = tab;
-		$rootScope.activeTab = tab;
+			$rootScope.activeTab = tab;
 		$('html, body').animate({
         	scrollTop: $($('#'+tab)).offset().top-98
     	}, 500);	
