@@ -1,4 +1,5 @@
 function feedbackCtrl($scope,$rootScope){
-	$rootScope.activeTab = 'feedback';
+	$rootScope.flags.loading = true;
+	$rootScope.flags.loading = false;
 }
 feedbackCtrl.inject = ['$scope','$rootScope'];

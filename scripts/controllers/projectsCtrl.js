@@ -1,4 +1,6 @@
 function projectsCtrl($scope,$rootScope){
-	$rootScope.activeTab = 'projects';
+	
+	$rootScope.flags.loading = true;
+	$rootScope.flags.loading = false;
 }
 projectsCtrl.inject = ['$scope','$rootScope'];

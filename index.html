@@ -19,15 +19,7 @@
   </head>
 </html>
 
-  <body ng-controller="mainCtrl">
-
-      <!--div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/nikhil-venkat">View On GitHub</a></li>
-        </nav>
-      </div>
-      <!-- end header -->
-
+  <body ng-controller="mainCtrl" loading>
       
       <div class="container">
         <div class="masthead">
@@ -37,13 +29,21 @@
             <div class="navbar-inner">
               <div class="container">
                 <ul class="nav">
-                  <li ng-animate="{activeTab=='index'}" ng-class="{active:activeTab=='index'}"><a href="#index">Home</a></li>
-                  <li ng-class="{active:activeTab=='about'}"><a href="#/about">About</a></li>
-                  <li ng-class="{active:activeTab=='resume'}"><a href="#/resume">Resume</a></li>
-                  <li ng-class="{active:activeTab=='work'}"><a href="#/work">Work</a></li>
-                  <li ng-class="{active:activeTab=='projects'}"><a href="#/projects">Projects</a></li>
-                  <li ng-class="{active:activeTab=='contact'}"><a href="#/contact">Contact</a></li>
-                  <li ng-class="{active:activeTab=='feedback'}"><a href="#/feedback">Feedback</a></li>
+
+                  <li ng-animate="{activeTab=='index'}" ng-class="{active:activeTab=='index'}"><a href="#index" ng-click="setActiveTab('index')">Home</a></li>
+
+                  <li ng-class="{active:activeTab=='about'}"><a ng-click="setActiveTab('about')" href="#/about">About</a></li>
+                  
+                  <li ng-class="{active:activeTab=='resume'}"><a ng-click="setActiveTab('resume')" href="#/resume">Resume</a></li>
+
+                  <li ng-click="setActiveTab('work')" ng-class="{active:activeTab=='work'}"><a href="#/work">Work</a></li>
+
+                  <li ng-click="setActiveTab('projects')" ng-class="{active:activeTab=='projects'}"><a href="#/projects">Projects</a></li>
+
+                  <li ng-click="setActiveTab('contact')" ng-class="{active:activeTab=='contact'}"><a href="#/contact">Contact</a></li>
+
+                  <li ng-click="setActiveTab('feedback')" ng-class="{active:activeTab=='feedback'}"><a href="#/feedback">Feedback</a></li>
+
                 </ul>
               </div>
             </div>
@@ -51,7 +51,7 @@
         </div>
 
       <!-- Jumbotron -->
-      <div class="jumbotron">
+      <div class="jumbotron" id="index">
         <h1>I build stuff!</h1>
         <p class="lead">Hello! My name is Nikhil, welcome to my personal webspace. I am a front end engineer living in San Francisco with my beautiful wife.</p>
         <a class="btn btn-large btn-success" href="#">Resume</a>
@@ -60,22 +60,18 @@
       <hr>
 
       <div class="row-fluid">
-        <ng-view></ng-view>
-        <div class="span12">
-          <h2>Heading</h2>
-          <p>Some Content goes here. Some Content goes here Some Content goes here Some Content goes here Some Content goes here Some Content goes here Some Content goes here</p>
-          <p><a class="btn" href="#">View details</a></p>
-        </div>
-        <!--div class="span4">
-          <h2>Heading</h2>
-          <p>Some Content goes here. Some Content goes here. Some Content goes here. Some Content goes here.Some Content goes here. Some Content goes here. Some Content goes here</p>
-          <p><a class="btn" href="#">View details</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Some Content goes here. Some Content goes here .Some Content goes here .Some Content goes hereSome Content goes here.</p>
-          <p><a class="btn" href="#">View details</a></p>
-        </div-->
+        <ng-include class="template" id="about" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/about.html'"></ng-include>
+        <hr>
+        <ng-include class="template" id="resume" ng-class="{fadeIn:activeTab == clickedTab}" src="activeTab=='resume'&&'pages/resume.html'"></ng-include>
+        <hr>
+        <ng-include class="template" id="work" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/work.html'"></ng-include>
+        <hr>
+        <ng-include class="template" id="projects" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/projects.html'"></ng-include>
+        <hr>
+        <ng-include class="template" id="contact" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/contact.html'"></ng-include>
+        <hr>
+        <ng-include class="template" id="feedback" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/feedback.html'"></ng-include>
+
       </div>
 
       <hr>
@@ -90,7 +86,11 @@
     <script src="scripts/bootstrap.min.js"></script>  
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> 
     <!--script src="scripts/respond.js"></script-->
+
+    <!--Modules-->
     <script src="scripts/modules/routesModule.js"></script>
+
+    <!--Controllers-->
     <script src="scripts/controllers/app.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
     <script src="scripts/controllers/aboutCtrl.js"></script>
@@ -99,5 +99,9 @@
     <script src="scripts/controllers/projectsCtrl.js"></script>
     <script src="scripts/controllers/contactCtrl.js"></script>
     <script src="scripts/controllers/feedbackCtrl.js"></script>
+
+    <!--Directives-->
+    <script src="scripts/directives/loading.js"></script>
+
   </body>
 </html>
