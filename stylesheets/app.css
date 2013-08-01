@@ -6,9 +6,27 @@
   display: none;
 }
 
+.displayPic {
+  background: url("http://nikhil-venkat.com/images/mypic.png") no-repeat;
+  cursor: pointer;
+  height: 160px;
+  width: 170px;
+  display: block;
+}
+
+.displayPic:hover {
+  transform: rotate(-2deg);
+}
+
 .navbar {
   position: fixed;
   top: 10px;
+}
+.navbar .nav li.active a {
+  -webkit-transition: background 2s ease-in-out;
+  -moz-transition: background 2s ease-in-out;
+  -o-transition: background 2s ease-in-out;
+  transition: background 2s ease-in-out;
 }
 
 .fadeIn {
@@ -31,5 +49,4 @@
 
 .template {
   display: block;
-  min-height: 620px;
 }

@@ -30,7 +30,7 @@
               <div class="container">
                 <ul class="nav">
 
-                  <li ng-animate="{activeTab=='index'}" ng-class="{active:activeTab=='index'}"><a href="#index" ng-click="setActiveTab('index')">Home</a></li>
+                  <li ng-class="{active:activeTab=='index'}"><a href="#index" ng-click="setActiveTab('index')">Home</a></li>
 
                   <li ng-class="{active:activeTab=='about'}"><a ng-click="setActiveTab('about')" href="#/about">About</a></li>
                   
@@ -54,23 +54,23 @@
       <div class="jumbotron" id="index">
         <h1>I build stuff!</h1>
         <p class="lead">Hello! My name is Nikhil, welcome to my personal webspace. I am a front end engineer living in San Francisco with my beautiful wife.</p>
-        <a class="btn btn-large btn-success" href="#">Resume</a>
+        <a href="#" class="displayPic"></a>
       </div>
 
       <hr>
 
       <div class="row-fluid">
-        <ng-include class="template" id="about" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/about.html'"></ng-include>
+        <ng-include class="template" sng-class="{fadeIn:activeTab == clickedTab}" src="'pages/about.html'"></ng-include>
         <hr>
-        <ng-include class="template" id="resume" ng-class="{fadeIn:activeTab == clickedTab}" src="activeTab=='resume'&&'pages/resume.html'"></ng-include>
+        <ng-include class="template"  ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/resume.html'"></ng-include>
         <hr>
-        <ng-include class="template" id="work" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/work.html'"></ng-include>
+        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/work.html'"></ng-include>
         <hr>
-        <ng-include class="template" id="projects" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/projects.html'"></ng-include>
+        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/projects.html'"></ng-include>
         <hr>
-        <ng-include class="template" id="contact" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/contact.html'"></ng-include>
+        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/contact.html'"></ng-include>
         <hr>
-        <ng-include class="template" id="feedback" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/feedback.html'"></ng-include>
+        <ng-include class="template" onload="templateLoaded()" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/feedback.html'"></ng-include>
 
       </div>
 
