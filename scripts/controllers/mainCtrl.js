@@ -11,6 +11,9 @@ function mainCtrl($scope,$rootScope,$window){
 		if(templateLoaded){
 			var hash;
 			hash = $window.location.hash.split('#/')[1];
+			if(!hash){
+				hash = 'index';
+			}
 			$rootScope.setActiveTab(hash);		
 		}
 	});
