@@ -14,7 +14,9 @@
     display:block;
 }
 .displayPic:hover{
-	transform:rotate(-2deg)
+	transform:rotate(-2deg);
+	-ms-transform:rotate(-2deg); /* IE 9 */
+	-webkit-transform:rotate(-2deg);
 }
 
 .navbar{
