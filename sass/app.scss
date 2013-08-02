@@ -7,11 +7,14 @@
 }
 
 .displayPic{
-	background: url('http://nikhil-venkat.com/images/mypic.png') no-repeat ;
+	background: url('../images/mypic.jpg') no-repeat ;
 	cursor: pointer;
     height: 160px;
-    width: 170px;
+    width: 160px;
     display:block;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  	box-shadow:         3px 3px 5px 6px #ccc;
 }
 .displayPic:hover{
 	transform:rotate(-2deg);

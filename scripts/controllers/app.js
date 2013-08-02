@@ -12,7 +12,7 @@ config(['$routeProvider', function($routeProvider) {
 	
 	$rootScope.activeTab = 'index';
 	$rootScope.flags = {};
-	$rootScope.flags.loading = false;
+	
 
 	$rootScope.setActiveTab = function(tab){
 		$rootScope.clickedTab = tab;
