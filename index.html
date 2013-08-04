@@ -16,21 +16,22 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+
+
   </head>
 </html>
 
   <body ng-controller="mainCtrl" loading>
       
-      <div class="container">
+  <div class="container">
         <div class="masthead">
-          
           <h3 class="muted" ng-cloak>{{myName}}</h3>
           <div class="navbar">
             <div class="navbar-inner">
               <div class="container">
                 <ul class="nav">
 
-                  <li ng-class="{active:activeTab=='index'}"><a href="#index" ng-click="setActiveTab('index')">Home</a></li>
+                  <li ng-class="{active:activeTab=='home'}"><a href="#home" ng-click="setActiveTab('home')">Home</a></li>
 
                   <li ng-class="{active:activeTab=='about'}"><a ng-click="setActiveTab('about')" href="#/about">About</a></li>
                   
@@ -50,47 +51,44 @@
           </div><!-- /.navbar -->
         </div>
 
-      <!-- Jumbotron -->
-      <div class="jumbotron" id="index">
-        <h1>I build stuff!</h1>
-        <p class="lead">Hello! My name is Nikhil, welcome to my personal webspace. I am a front end engineer living in San Francisco with my beautiful wife.</p>
-        <a href="#" class="displayPic"></a>
-      </div>
+        
 
-      <hr>
+        <div class="row-fluid">
+          <!-- Jumbotron -->
+          <ng-include class="template" src="'pages/home.html'"></ng-include>
+          <hr>
+          <ng-include class="template" src="'pages/about.html'"></ng-include>
+          <hr>
+          <ng-include class="template" src="'pages/resume.html'"></ng-include>
+          <hr>
+          <ng-include class="template" src="'pages/work.html'"></ng-include>
+          <hr>
+          <ng-include class="template" src="'pages/projects.html'"></ng-include>
+          <hr>
+          <ng-include class="template" src="'pages/contact.html'"></ng-include>
+          <hr>
+          <ng-include class="template" onload="templateLoaded()" src="'pages/feedback.html'"></ng-include>
+        </div>
+        <hr>
 
-      <div class="row-fluid">
-        <ng-include class="template" sng-class="{fadeIn:activeTab == clickedTab}" src="'pages/about.html'"></ng-include>
-        <hr>
-        <ng-include class="template"  ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/resume.html'"></ng-include>
-        <hr>
-        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/work.html'"></ng-include>
-        <hr>
-        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/projects.html'"></ng-include>
-        <hr>
-        <ng-include class="template" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/contact.html'"></ng-include>
-        <hr>
-        <ng-include class="template" onload="templateLoaded()" ng-class="{fadeIn:activeTab == clickedTab}" src="'pages/feedback.html'"></ng-include>
-      </div>
-      <hr>
+        <div class="footer">
+          <p>Nikhil-Venkat &copy; 2013</p>
+        </div>
 
-      <div class="footer">
-        <p>Nikhil-Venkat &copy; 2013</p>
-      </div>
+  </div><!--end container-->
 
-    </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script src="scripts/lib/jquery.js"></script>
     <script src="scripts/bootstrap.min.js"></script>  
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> 
-    <!--script src="scripts/respond.js"></script-->
-
+    
     <!--Modules-->
     <script src="scripts/modules/routesModule.js"></script>
 
     <!--Controllers-->
     <script src="scripts/controllers/app.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
+    <script src="scripts/controllers/homeCtrl.js"></script>
     <script src="scripts/controllers/aboutCtrl.js"></script>
     <script src="scripts/controllers/resumeCtrl.js"></script>
     <script src="scripts/controllers/workCtrl.js"></script>
@@ -101,6 +99,10 @@
     <!--Directives-->
     <script src="scripts/directives/loading.js"></script>
     <!--Library files-->
-    <script src="scripts/lib/scrollorama.js"></script>
+    <script type="text/javascript" src="scripts/lib/greensock/TweenMax.min.js"></script> 
+    <script src="scripts/lib/superscrollorama/jquery.superscrollorama.js"></script>
+    <script>
+          
+    </script>
   </body>
 </html>

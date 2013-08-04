@@ -7,19 +7,19 @@ config(['$routeProvider', function($routeProvider) {
       // when('/projects', {templateUrl: 'pages/projects.html'}).
       // when('/contact', {templateUrl: 'pages/contact.html'}).
       // when('/feedback', {templateUrl: 'pages/feedback.html'}).
-      otherwise({redirectTo: '/index'});
+      otherwise({redirectTo: '/home'});
 }]).run(['$rootScope', '$timeout', '$routeParams','$window', function($rootScope, $timeout, $routeParams,$window){
 	
-	$rootScope.activeTab = 'index';
+	$rootScope.activeTab = 'home';
 	$rootScope.flags = {};
 	
-
 	$rootScope.setActiveTab = function(tab){
 		$rootScope.clickedTab = tab;
 		$rootScope.activeTab = tab;
 		$('html, body').animate({
-        	scrollTop: $($('#'+tab)).offset().top-98
-    	}, 800);	
+        	scrollTop: $($('#'+tab)).offset().top-40
+    	}, 800);
+    	
 	}
 
 	$rootScope.isScrolledIntoView = function(elem){
@@ -33,7 +33,7 @@ config(['$routeProvider', function($routeProvider) {
 	}
 
 	$(window).scroll(function () {
-		var index = $('#index');
+		var index = $('#home');
 		var about = $('#about');
 		var resume = $('#resume');
 		var work = $('#work');
@@ -42,7 +42,7 @@ config(['$routeProvider', function($routeProvider) {
 		var feedback = $('#feedback');
 
 		if($rootScope.isScrolledIntoView(index)){
-			$rootScope.setTabBackground('index');
+			$rootScope.setTabBackground('home');
 		}
 		else if($rootScope.isScrolledIntoView(about)){
 			$rootScope.setTabBackground('about');
@@ -70,6 +70,8 @@ config(['$routeProvider', function($routeProvider) {
 			$rootScope.activeTab = tab;
 		});
 	}
+
+
 	
 
 }]);

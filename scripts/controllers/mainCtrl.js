@@ -3,7 +3,9 @@ function mainCtrl($scope,$rootScope,$window){
 	$rootScope.flags.loading = true;
 
 	$scope.templateLoaded = function(){
-		$scope.$emit('templateLoaded',true);
+		setTimeout(function(){
+			$scope.$emit('templateLoaded',true);
+		},2000);
 	}
 
 	$scope.$on('templateLoaded',function(event,templateLoaded){
@@ -11,19 +13,35 @@ function mainCtrl($scope,$rootScope,$window){
 			var hash;
 			hash = $window.location.hash.split('#/')[1];
 			if(!hash){
-				hash = 'index';
+				hash = 'home';
 			}
 			$rootScope.setActiveTab(hash);		
 			$rootScope.flags.loading = false;
+			
+			var controller = $.superscrollorama();
+	        controller.addTween(
+	            '#resume', 
+	            TweenMax.from( $('#resume'),.5,{css:{opacity: 0}}),
+	              0,
+	              0,
+	              false
+	            );
 
-			/*
-			var scrollorama = $.scrollorama({ blocks:'.scrollblock' });
-			scrollorama.onBlockChange(function() {
-   			console.log('You just scrolled to block#'+scrollorama.blockIndex);
-			 });
-			scrollorama
-				.animate('#resume_btn',{ delay:500, duration:'500',property:'opacity', start:0 , end:1 })
-			*/
+	            controller.addTween(
+	            '#work', 
+	            TweenMax.from( $('#work'),.5,{css:{opacity: 0}}),
+	              0,
+	              0,
+	              false
+	            );
+
+	            controller.addTween(
+	            '#contact', 
+	            TweenMax.from( $('#contact'),.5,{css:{opacity: 0}}),
+	              0,
+	              0,
+	              false
+	            );
 		}
 	});
 	

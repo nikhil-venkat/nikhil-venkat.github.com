@@ -6,6 +6,10 @@
   display: none;
 }
 
+.row-fluid {
+  padding-bottom: 200px;
+}
+
 .displayPic {
   background: url("../images/mypic.jpg") no-repeat;
   cursor: pointer;
@@ -24,15 +28,25 @@
   -webkit-transform: rotate(-2deg);
 }
 
+.templateOpacity {
+  opacity: 0.5;
+}
+
 .navbar {
   position: fixed;
-  top: 10px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
 }
 .navbar .nav li.active a {
   -webkit-transition: background 2s ease-in-out;
   -moz-transition: background 2s ease-in-out;
   -o-transition: background 2s ease-in-out;
   transition: background 2s ease-in-out;
+}
+.navbar .navbar-inner {
+  padding-left: 130px;
 }
 
 .fadeIn {
