@@ -14,8 +14,16 @@ angular.module('scrollarama', [])
 
 .directive('scrollarama', function(){
 	return {
-		link: function(scope, Elem, Attrs) {
-			 
+		link: function(scope, elem, attrs) {
+			var section = ($(elem).attr('id'));
+			var controller = $.superscrollorama();
+	        controller.addTween(
+	            '#'+section, 
+	            TweenMax.from( $('#'+section),.5,{css:{opacity: 0}}),
+	              0,
+	              0,
+	              false
+	            );
 		}
 	};
 });

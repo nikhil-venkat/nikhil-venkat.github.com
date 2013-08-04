@@ -18,30 +18,7 @@ function mainCtrl($scope,$rootScope,$window){
 			$rootScope.setActiveTab(hash);		
 			$rootScope.flags.loading = false;
 			
-			var controller = $.superscrollorama();
-	        controller.addTween(
-	            '#resume', 
-	            TweenMax.from( $('#resume'),.5,{css:{opacity: 0}}),
-	              0,
-	              0,
-	              false
-	            );
-
-	            controller.addTween(
-	            '#work', 
-	            TweenMax.from( $('#work'),.5,{css:{opacity: 0}}),
-	              0,
-	              0,
-	              false
-	            );
-
-	            controller.addTween(
-	            '#contact', 
-	            TweenMax.from( $('#contact'),.5,{css:{opacity: 0}}),
-	              0,
-	              0,
-	              false
-	            );
+			
 		}
 	});
 	

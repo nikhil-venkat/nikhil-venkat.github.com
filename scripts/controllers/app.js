@@ -1,4 +1,4 @@
-angular.module('myWebsite', ['loading']).
+angular.module('myWebsite', ['loading','scrollarama']).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       // when('/about', {templateUrl: 'pages/about.html'}).
