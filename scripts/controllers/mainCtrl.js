@@ -5,7 +5,7 @@ function mainCtrl($scope,$rootScope,$window){
 	$scope.templateLoaded = function(){
 		setTimeout(function(){
 			$scope.$emit('templateLoaded',true);
-		},2000);
+		},500);
 	}
 
 	$scope.$on('templateLoaded',function(event,templateLoaded){
