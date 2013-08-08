@@ -1,19 +1,9 @@
 <div ng-controller="resumeCtrl" id="resume" scrollarama>
 <h2>Resume</h2>
 	<ul>
-		
-		<li> 
-			Web Technologies: HTML, CSS, JavaScript, jQuery ,Angular JS, HTML5 , CSS3, SASS, JSP, JSON , XML, XSL, AJAX.
+		<li ng-repeat="item in content"> 
+			{{item.title}} : {{item.skills}}
 		</li> 
-		<li>
-			Database: MySQL, MS Access,mongolab.
-		</li>
-		<li>
-			Servers and Tools: CodeIgniter, Wordpress, Sublime Text, Git , Svn , Photoshop CS4, Apache Tomcat.
-		</li>
-		<li>
-			Operating System: Mac OS Windows 95 & above.
-		</li>
 	</ul>
 	<a class="btn btn-large btn-success"  href="#" >Resume</a>
 </div>

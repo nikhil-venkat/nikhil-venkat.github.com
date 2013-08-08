@@ -1,4 +1,4 @@
-angular.module('myWebsite', ['loading','scrollarama']).
+angular.module('myWebsite', ['loading','scrollarama','appService']).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       // when('/about', {templateUrl: 'pages/about.html'}).
@@ -70,8 +70,5 @@ config(['$routeProvider', function($routeProvider) {
 			$rootScope.activeTab = tab;
 		});
 	}
-
-
-	
 
 }]);
