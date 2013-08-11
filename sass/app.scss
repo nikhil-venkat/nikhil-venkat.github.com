@@ -48,7 +48,8 @@
 		}
 	}
 	.navbar-inner{
-		padding-left:130px;
+		padding-right:0px;
+		padding-left:9%;
 	}
 }
 
@@ -74,4 +75,10 @@
 .template{
 	display:block;
 	//min-height:620px;
+}
+
+.footer{
+	p{
+		text-align:center;
+	}
 }

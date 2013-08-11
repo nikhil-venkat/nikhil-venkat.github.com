@@ -46,7 +46,8 @@
   transition: background 2s ease-in-out;
 }
 .navbar .navbar-inner {
-  padding-left: 130px;
+  padding-right: 0px;
+  padding-left: 9%;
 }
 
 .fadeIn {
@@ -69,4 +70,8 @@
 
 .template {
   display: block;
+}
+
+.footer p {
+  text-align: center;
 }
