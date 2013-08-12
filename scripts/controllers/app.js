@@ -14,12 +14,9 @@ config(['$routeProvider', function($routeProvider) {
 	$rootScope.flags = {};
 	
 	$rootScope.setActiveTab = function(tab){
-		$rootScope.clickedTab = tab;
-		$rootScope.activeTab = tab;
 		$('html, body').animate({
         	scrollTop: $($('#'+tab)).offset().top-40
     	}, 800);
-    	
 	}
 
 	$rootScope.isScrolledIntoView = function(elem){
