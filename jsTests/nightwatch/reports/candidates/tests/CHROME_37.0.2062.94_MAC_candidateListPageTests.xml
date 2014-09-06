@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="candidateListPageTests"
+             errors="0"
+             failures="0"
+             tests="24">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Check Validation when user tries to change candidate status" package="candidateListPageTests" skipped="0"
+    tests="7" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 50 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#jv-selectionMsg&gt; contains text: &quot;Please select a Requisition.&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 28 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Allow user to change candidate status if requisition selected from Reqs list page" package="candidateListPageTests" skipped="0"
+    tests="9" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Requisitions&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#jv-modalDialog&gt; was visible after 536 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#jv-modalDialog .jv-dialog-title&gt; contains text: &quot;Change Status&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#jv-modalDialog&gt; was not visible after 523 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Allow user to change candidate status if requisition selected from Dashboard page" package="candidateListPageTests" skipped="0"
+    tests="8" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 37 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#jv-modalDialog&gt; was visible after 531 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#jv-modalDialog .jv-dialog-title&gt; contains text: &quot;Change Status&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#jv-modalDialog&gt; was not visible after 524 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="end" package="candidateListPageTests" skipped="0"
+    tests="0" time="" timestamp="">
+    
+    
+    
+    </testsuite>
+  
+</testsuites>

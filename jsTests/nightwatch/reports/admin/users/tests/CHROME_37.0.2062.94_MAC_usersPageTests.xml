@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="usersPageTests"
+             errors="0"
+             failures="1"
+             tests="5">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Login to Jobvite" package="usersPageTests" skipped="0"
+    tests="3" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 148 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 54 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="1" hostname="" id=""
+    name="Go to Admin" package="usersPageTests" skipped="0"
+    tests="2" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;#hr-moreTabSectionContainer&gt; was visible after 74 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Admin&quot;.">
+        
+          <failure message="Expected &quot;Jobvite - Admin&quot; but got: &quot;Jobvite - Introduction&quot;"></failure>
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+</testsuites>

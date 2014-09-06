@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="loginPageTests"
+             errors="0"
+             failures="1"
+             tests="4">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="login" package="loginPageTests" skipped="0"
+    tests="3" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 30 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#hr-moreTabSection&quot; using: css selector
+Unable to locate element: &quot;#hr-jobviteLogo a&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="1" hostname="" id=""
+    name="logout" package="loginPageTests" skipped="0"
+    tests="1" time="" timestamp="">
+    
+    
+      <testcase name="Timed out while waiting for element &lt;#hr-profileToggleNext&gt; to be visible for 1000 milliseconds.">
+        
+          <failure message="Expected &quot;visible&quot; but got: &quot;not visible&quot;"></failure>
+        
+        
+      </testcase>
+    
+    
+      <system-err>
+        Unable to locate element: &quot;#hr-moreTabSection&quot; using: css selector
+Unable to locate element: &quot;#hr-jobviteLogo a&quot; using: css selector
+      </system-err>
+    
+    </testsuite>
+  
+</testsuites>

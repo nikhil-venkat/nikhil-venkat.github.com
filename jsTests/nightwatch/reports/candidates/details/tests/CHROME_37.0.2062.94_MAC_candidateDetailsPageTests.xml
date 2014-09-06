@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="candidateDetailsPageTests"
+             errors="0"
+             failures="0"
+             tests="75">
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Check Actions Dropdown" package="candidateDetailsPageTests" skipped="0"
+    tests="7" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 55 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 33 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 28 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Check Move Candidate Link" package="candidateDetailsPageTests" skipped="0"
+    tests="10" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 28 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 35 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 34 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(2)&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 27 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Search inside Move Candidate Modal " package="candidateDetailsPageTests" skipped="0"
+    tests="11" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 25 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 25 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 25 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(2)&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 27 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Move Candidate to a Different Req" package="candidateDetailsPageTests" skipped="0"
+    tests="13" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 24 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 39 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(2)&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was not visible after 1872 milliseconds.">
+        
+        
+          <system-out>
+            
+              [[ATTACHMENT|/Users/nikhil/dev/TalentNetwork-Git/jsTests/nightwatch/screenshots/ERROR_Thu-Sep-04-2014-103435-GMT-0700.png]]
+            
+          </system-out>
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#container &gt; div:nth-child(2) &gt; ul.stats.marginTop0 &gt; li.ng-binding &gt; em &gt; a&gt; was visible after 31 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#container &gt; div:nth-child(2) &gt; ul.stats.marginTop0 &gt; li.ng-binding &gt; em &gt; a&gt; contains text: &quot;&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Move Candidate Validation" package="candidateDetailsPageTests" skipped="0"
+    tests="11" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 25 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 23 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(2)&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Move Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;#jvt-move-modal &gt; div &gt; div.jv-modal-content.clearfix.ng-scope &gt; form &gt; div &gt; p &gt; span.error.inline.marginLeft10.paddingBottom0.ng-binding&gt; contains text: &quot;Please select a requisition&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Check Add To Req Link" package="candidateDetailsPageTests" skipped="0"
+    tests="10" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 23 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 24 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(1)&gt; contains text: &quot;Add To Requisitions&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 27 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Add Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 29 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="Add Candidate to Req" package="candidateDetailsPageTests" skipped="0"
+    tests="13" time="" timestamp="">
+    
+    
+      <testcase name="Element &lt;body&gt; was visible after 34 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#LoginButton&gt; was visible after 35 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Dashboard&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Candidates&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.actionsDropdownContainer&gt; was visible after 30 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.actionsDropdownContainer a:nth-child(1)&gt; contains text: &quot;Add To Requisitions&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.jv-modal&gt; was visible after 27 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.jv-modal-header h2&gt; contains text: &quot;Add Candidate&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.msg-notice&gt; was visible after 533 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if element &lt;.msg-notice&gt; contains text: &quot;Candidate is added to Requisition&quot;.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;.msg-notice&gt; was not visible after 5301 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Element &lt;#hr-profileToggleNext&gt; was visible after 26 milliseconds.">
+        
+        
+      </testcase>
+    
+      <testcase name="Testing if the page title equals &quot;Jobvite - Login&quot;.">
+        
+        
+      </testcase>
+    
+    
+    </testsuite>
+  
+  <testsuite errors="0" failures="0" hostname="" id=""
+    name="end" package="candidateDetailsPageTests" skipped="0"
+    tests="0" time="" timestamp="">
+    
+    
+    
+    </testsuite>
+  
+</testsuites>
