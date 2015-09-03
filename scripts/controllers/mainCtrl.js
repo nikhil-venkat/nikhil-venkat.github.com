@@ -1,5 +1,6 @@
 function mainCtrl($scope,$rootScope,$window){
 	$scope.myName = 'Nikhil Venkat';
+	$scope.year = new Date().getFullYear();
 	$rootScope.flags.loading = true;
 
 	$scope.templateLoaded = function(){
