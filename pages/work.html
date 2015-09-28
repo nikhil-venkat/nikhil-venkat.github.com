@@ -6,7 +6,7 @@
 		<p>
 			{{item.title}}
 		</p>
-		<blockquote>{{item.summary}}</blockquote>
+		<blockquote ng-bind-html-unsafe="item.summary"></blockquote>
 		<blockquote>{{item.period}}</blockquote>
 		
 	</li>
