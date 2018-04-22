@@ -20,13 +20,13 @@ let init = function(data) {
     Vue.component('work', {
         template: `<div class="work">
         <ul>
-            <li v-for="item in componentData">
+            <li class="work-item" v-for="item in componentData">
                 <p>
-                    <blockquote>
+                    <div class="work-item-content">
                         <a  :href="item.url"> {{item.company}}</a>: <span v-html=item.title></span>
                         <p v-html="item.summary"></p>
                         <p>{{item.period}}</p>
-                    </blockquote>
+                    </div>
                 </p>
             </li>
          </ul><hr>
