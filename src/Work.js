@@ -18,15 +18,15 @@ let getComponentData = function () {
 
 let init = function(data) {
     Vue.component('work', {
-        template: `<div>
+        template: `<div class="work">
         <ul>
             <li v-for="item in componentData">
                 <p>
                     <blockquote>
                         <a  :href="item.url"> {{item.company}}</a>: <span v-html=item.title></span>
+                        <p v-html="item.summary"></p>
+                        <p>{{item.period}}</p>
                     </blockquote>
-                    <p v-html="item.summary"></p>
-                    <span>{{item.period}}</span>
                 </p>
             </li>
          </ul><hr>

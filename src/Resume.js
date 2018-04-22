@@ -18,7 +18,7 @@ let getComponentData = function () {
 
 let init = function(data) {
     Vue.component('resume', {
-        template: `<div><h1> {{title}} </h1>
+        template: `<div class="resume">
         <ul>
             <li v-for="item in componentData">
                 {{ item.title }}: {{ item.skills }}

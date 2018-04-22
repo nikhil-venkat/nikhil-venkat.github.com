@@ -5,7 +5,7 @@ Vue.use(VueAxios,axios);
     
 Vue.component('intro', {
     template: `
-        <div>
+        <div class="intro">
             <p class="lead">
                  {{componentData}}
             </p>
