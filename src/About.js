@@ -18,7 +18,7 @@ let getComponentData = function () {
 
 let init = function(data) {
     Vue.component('about', {
-        template: '<div><h1> About Me </h1><p v-html="componentData">  </p><hr></div>',
+        template: '<div class="about"><h1> About Me </h1><p v-html="componentData">  </p><hr></div>',
         props: ['page'],
         data: function () {
             return { 

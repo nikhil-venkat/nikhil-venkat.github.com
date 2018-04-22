@@ -1,8 +1,11 @@
-#container {
-  margin-top: 20px; }
-
 ul li {
   list-style-type: none; }
+
+blockquote {
+  font-size: 14px; }
+
+#container {
+  margin-top: 50px; }
 
 .displayPic {
   background: url(images/mypic.jpg) no-repeat;
@@ -17,3 +20,6 @@ ul li {
     transform: rotate(-2deg);
     -ms-transform: rotate(-2deg);
     -webkit-transform: rotate(-2deg); }
+
+.about, .intro {
+  padding: 0 40px; }

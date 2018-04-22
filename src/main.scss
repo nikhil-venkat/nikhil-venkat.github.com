@@ -1,11 +1,17 @@
-#container {
-    margin-top: 40px;
-}
 ul {
-	li {
-		list-style-type: none;
-	}
+    li {
+        list-style-type: none;
+    }
 }
+
+blockquote {
+  font-size: 14px; 
+}
+
+#container {
+  margin-top: 50px;
+}
+
 .displayPic {
     background: url('images/mypic.jpg') no-repeat;
     cursor: pointer;
@@ -16,8 +22,12 @@ ul {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;
     box-shadow: 3px 3px 5px 6px #ccc;
     &:hover {
-	    transform: rotate(-2deg);
-	    -ms-transform: rotate(-2deg);
-	    -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+        -ms-transform: rotate(-2deg);
+        -webkit-transform: rotate(-2deg);
     }
+}
+
+.about, .intro {
+  padding: 0 40px;
 }

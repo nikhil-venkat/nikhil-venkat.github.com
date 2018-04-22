@@ -26718,7 +26718,7 @@ Vue.use(VueAxios, axios);
 
 Vue.component('intro', {
     template: `
-        <div>
+        <div class="intro">
             <p class="lead">
                  {{componentData}}
             </p>
@@ -26756,7 +26756,7 @@ let getComponentData = function () {
 
 let init = function (data) {
     Vue.component('about', {
-        template: '<div><h1> About Me </h1><p v-html="componentData">  </p><hr></div>',
+        template: '<div class="about"><h1> About Me </h1><p v-html="componentData">  </p><hr></div>',
         props: ['page'],
         data: function () {
             return {
@@ -26794,7 +26794,7 @@ let getComponentData = function () {
 
 let init = function (data) {
     Vue.component('resume', {
-        template: `<div><h1> {{title}} </h1>
+        template: `<div class="resume">
         <ul>
             <li v-for="item in componentData">
                 {{ item.title }}: {{ item.skills }}
@@ -26838,15 +26838,15 @@ let getComponentData = function () {
 
 let init = function (data) {
     Vue.component('work', {
-        template: `<div>
+        template: `<div class="work">
         <ul>
             <li v-for="item in componentData">
                 <p>
                     <blockquote>
                         <a  :href="item.url"> {{item.company}}</a>: <span v-html=item.title></span>
+                        <p v-html="item.summary"></p>
+                        <p>{{item.period}}</p>
                     </blockquote>
-                    <p v-html="item.summary"></p>
-                    <span>{{item.period}}</span>
                 </p>
             </li>
          </ul><hr>
