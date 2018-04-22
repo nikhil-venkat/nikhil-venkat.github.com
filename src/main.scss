@@ -4,10 +4,6 @@ ul {
     }
 }
 
-blockquote {
-  font-size: 14px; 
-}
-
 #container {
   margin-top: 50px;
 }
@@ -30,4 +26,44 @@ blockquote {
 
 .about, .intro {
   padding: 0 40px;
+}
+
+.work {
+  ul {
+      li.work-item {
+        margin: 15px 0;
+      }
+  }
+  .work-item-content {
+    border-left: 5px solid #eeeeee;
+    padding-left: 15px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  #container {
+    font-size: 3vw;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #container {
+    font-size: 3vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  #container {
+    font-size: 1vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #container {
+    font-size: 1vw;
+  }
 }
