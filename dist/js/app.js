@@ -26433,7 +26433,7 @@ function render(options) {
         new Vue({
             el: options.el
         });
-    }, 600);
+    }, 900);
 }
 
 module.exports = {
