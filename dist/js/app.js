@@ -26418,13 +26418,6 @@ function render(options) {
 
     setTimeout(function () {
         Vue.component('site', {
-            /*template: `<div>
-                <intro> </intro> 
-                <about> </about> 
-                <resume> </resume>
-                <work> </work> 
-                <copyright> </copyright> 
-            </div>`,*/
             template: `<div>
                 <intro> </intro>
                 <about> </about>
@@ -26440,7 +26433,7 @@ function render(options) {
         new Vue({
             el: options.el
         });
-    }, 500);
+    }, 600);
 }
 
 module.exports = {
@@ -26719,15 +26712,14 @@ Vue.use(VueAxios, axios);
 Vue.component('intro', {
     template: `
         <div class="intro">
-            <p class="lead">
-                 {{componentData}}
+            <p class="lead" v-html="componentData">
             </p>
             <a href="#" class="displayPic"></a>
         </div>
     `,
     data: function () {
         return {
-            componentData: 'Hello! My name is Nikhil, I am an engineer living in the San Francisco bay area. Welcome to my personal webspace!'
+            componentData: 'Hello! My name is <a target="_blank" href="https://www.linkedin.com/in/nikhil-venkatraman"> Nikhil</a>, I am an engineer living in the San Francisco bay area. Welcome to my personal webspace!'
         };
     }
 });
@@ -26756,7 +26748,12 @@ let getComponentData = function () {
 
 let init = function (data) {
     Vue.component('about', {
-        template: '<div class="about"><h1> About Me </h1><p v-html="componentData">  </p><hr></div>',
+        template: `
+                <div class="about">
+                    <h1> About Me </h1>
+                    <p v-html="componentData"> </p>
+                    <hr>
+                </div>`,
         props: ['page'],
         data: function () {
             return {
