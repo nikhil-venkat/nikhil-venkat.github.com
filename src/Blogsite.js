@@ -13,13 +13,6 @@ function render (options) {
 
     setTimeout(function() {
         Vue.component('site', {
-            /*template: `<div>
-                <intro> </intro> 
-                <about> </about> 
-                <resume> </resume>
-                <work> </work> 
-                <copyright> </copyright> 
-            </div>`,*/
             template: `<div>
                 <intro> </intro>
                 <about> </about>
@@ -36,7 +29,7 @@ function render (options) {
         new Vue({
             el: options.el
         });
-    }, 500);
+    }, 600);
 }
 
 module.exports = {
