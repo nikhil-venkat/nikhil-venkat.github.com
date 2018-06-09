@@ -1,11 +1,11 @@
-let Vue = require('vue/dist/vue');
-let axios = require('axios/dist/axios');
-let VueAxios = require('vue-axios');
+const Vue = require('vue/dist/vue');
+const axios = require('axios/dist/axios');
+const VueAxios = require('vue-axios');
 Vue.use(VueAxios,axios);
 
-let getComponentData = function () {
+const getComponentData = function () {
     return new Promise(function(resolve, reject) {
-        let api = 'https://api.mongolab.com/api/1/databases/t_website/collections/t_workExperience?apiKey=Ty71bCX96vKu8p9bjK2dX2OMqZa2Lk3I';
+        const api = 'https://api.mongolab.com/api/1/databases/t_website/collections/t_workExperience?apiKey=Ty71bCX96vKu8p9bjK2dX2OMqZa2Lk3I';
         Vue.axios.get(api).then(function(response) {
             if (response) {
                 resolve(response.data[0].pageData.info);
@@ -16,7 +16,7 @@ let getComponentData = function () {
     });
 };
 
-let init = function(data) {
+const init = function(data) {
     Vue.component('work', {
         template: `<div class="work">
         <ul>
