@@ -1,6 +1,6 @@
-let Vue = require('vue/dist/vue');
-let axios = require('axios/dist/axios');
-let VueAxios = require('vue-axios');
+const Vue = require('vue/dist/vue');
+const axios = require('axios/dist/axios');
+const VueAxios = require('vue-axios');
 Vue.use(VueAxios,axios);
     
 Vue.component('intro', {
